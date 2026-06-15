@@ -1,0 +1,512 @@
+/* setting the colours */
+
+:root {
+    --pink: rgb(236, 158, 174);
+    --light-pink: rgb(249, 234, 238);
+    --dark-pink: rgb(199, 90, 126);
+}
+
+/* setting the rules that should apply to the whole project */
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    color: var(--dark-pink);
+}
+
+i { text-transform: none; }
+
+button:hover { cursor: pointer; }
+
+section { padding: 3rem; }
+
+/* for navigation bar */
+
+header {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 1px 20px rgba(197, 110, 119, 0.5);
+    width: 100%;
+    min-height: 4vh;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.icons, .navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar { width: 30%; }
+
+.icons { width: 7%; }
+
+/* for user tab */
+
+.user-page {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.user-options {
+    width: 30%;
+    height: 140px;
+    background-color: var(--dark-pink);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 12px;
+    position: relative;
+    top: 50%;
+    transform: translateY(100%);
+}
+
+.user-options a {
+    width: 100%;
+}
+
+.user-options button {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    box-shadow: 3px 3px 0 rgb(223, 136, 165);
+    font-weight: 700;
+    font-size: 16px;
+    margin: 6px 0;
+}
+
+.user-options button:hover {
+    background-color: var(--dark-pink);
+    border: solid 2px white;
+    color: white;
+    box-shadow: none;
+}
+
+.user-options button:active {
+    background-color: white;
+    color: var(--dark-pink);
+    box-shadow: none;
+    transform: translateY(3px);
+}
+
+.signup-btn { margin-top: 0; }
+
+/* homepage starts here */
+
+.home {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    min-height: 100vh;
+    background: url(pictures/shop/tulip.jpg) no-repeat;
+    background-size: 100%;
+    background-position: 50% 10%;
+}
+
+.content {
+    max-width: 50rem;
+    word-spacing: 2px;
+    max-height: 102vh;
+}
+
+.welcome {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-top: 0;
+}
+
+.welcome-txt {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    max-width: 30rem;
+    text-align: justify;
+    text-transform: none;
+    margin-right: 4.5rem;
+}
+
+.products-btn {
+    min-height: 3rem;
+    min-width: 15rem;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 900
+}
+
+/* sales section starts here */
+
+.sales { margin-bottom: 100px; }
+
+.sale-products {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-height: 40vh;
+    justify-content: space-between;
+}
+
+.headings {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 2px 20px rgba(198, 114, 147, 0.3);
+    /*border: solid 1px var(--pink);*/
+    height: 21rem;
+    width: 18rem;
+    padding: 20px;
+}
+
+.product-img {
+    padding: 2rem;
+    width: 100%;
+    height: 15rem;
+    border: solid 1px white;
+}
+
+.product:hover {
+    box-shadow: 0 4px 40px rgba(131, 104, 106, 0.582);
+    transform: 3px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.product-txt {
+    font-size: 1rem;
+    line-height: 24px;
+}
+
+.prev-price {
+    color: grey;
+    text-decoration: line-through;
+    font-size: 0.875rem;
+    margin-left: 5px;
+}
+
+/* about section starts here */
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+    padding-bottom: 0;
+}
+
+.tulip-town {
+    text-align: justify;
+    margin-right: 2rem;
+    line-height: 25px;
+}
+
+.about-img {
+    width: 22rem;
+    height: 22rem;
+}
+
+.about-txt {
+    margin-top: 25px;
+    text-transform: none;
+}
+
+.shop-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 6px;
+}
+
+.view-btn {
+    width: 15rem;
+    height: 3rem;
+    padding: 10px;
+    background-color: var(--dark-pink);
+    color: white;
+    border-radius: 30px;
+    font-size: 1rem;
+    box-shadow: 0 3px 5px rgba(196, 129, 153, 0.5);
+    word-spacing: 3px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.view-btn:hover {
+    box-shadow: 0 3px 5px rgba(167, 121, 137, 1);
+}
+
+.view-btn:active {
+    transform: scale(2px, 2px);
+}
+
+/* review section starts here */
+
+.review {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+}
+
+.review-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#like {
+    margin-top: 12px;
+}
+
+#like:hover {
+    cursor: pointer;
+}
+
+.rv {
+    max-width: 17rem;
+    box-shadow: 0 1px 10px 2px rgba(211, 130, 160, 0.295);
+    padding: 1rem;
+}
+
+.viewrv-btn {
+    display: block;
+}
+
+.post-rv {
+    margin-top: 2rem;
+}
+
+.input-opinion {
+    border: solid 2px var(--dark-pink);
+    width: 40rem;
+    height: 2rem;
+    padding: 5px;
+    text-transform: none;
+}
+
+.post-btn, .cancel-btn {
+    background-color: var(--dark-pink);
+    width: 6rem;
+    height: 2rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* footer starts here */
+
+footer {
+    background-color: rgba(199, 90, 126, 0.8);
+    padding: 2rem;
+}
+
+footer p, footer li, footer a, footer span, footer b {
+    color: white;
+}
+
+li:hover, .ig-username:hover, #cont-link:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.sub-headings, footer a {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.quick-link {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul { list-style: none; }
+
+.lowcase, .ig-username { text-transform: lowercase; }
+
+.normal-case { text-transform: none; }
+
+.identity {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.reviewer {
+    margin-left: 16px;
+    font-size: 1.08rem;
+    font-weight: 600;
+    word-spacing: 2px;
+}
+
+.opinion {
+    text-align: justify;
+    text-transform: none;
+}
+
+/* homepage ended */
+
+/* for cart */
+
+.cart-tab {
+    width: 400px;
+    background-color:rgb(199, 90, 126);
+    padding: 15px;
+    color: white;
+    position: fixed;
+    inset: 0 0 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+}
+
+/* sign up page css starts here */
+
+.signup-pg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-name {
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 12px 0;
+}
+
+.pg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    box-shadow: 0 2px 20px rgba(72, 1, 36, 0.237);
+    border-radius: 1rem;
+}
+
+.left-side {
+    text-align: center;
+    line-height: 35px;
+    padding: 1rem;
+    width: 50%;
+}
+
+.big-txt {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.small-txt {
+    text-transform: none;
+}
+
+.sign-up-form, .login-form {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-pink);
+    width: 25vw;
+    padding: 1rem;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.to-do {
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.signup-pg label {
+    display: block;
+    font-weight: 500;
+}
+
+.signup-pg input {
+    margin: 8px 0;
+    width: 100%;
+    height: 2rem;
+    padding: 6px;
+}
+
+.det {
+    margin-bottom: 16px;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+#password, #email {
+    text-transform: lowercase;
+}
+
+.sign-up, .login{
+    width: 100%;
+    height: 3rem;
+    background-color: var(--dark-pink);
+    color: white;
+    font-weight: 500;
+}
+
+.sign-up:hover {
+    background-color: white;
+    border: solid 2px rgb(199, 90, 126);
+    color: var(--dark-pink);
+}
+
+.signup-pg a {
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.login {
+    margin-top: 8px;
+}

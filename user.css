@@ -1,0 +1,123 @@
+:root {
+    --pink: rgb(236, 158, 174);
+    --light-pink: rgb(249, 234, 238);
+    --dark-pink: rgb(199, 90, 126);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    color: var(--dark-pink);
+    font-size: 0.96rem;
+    word-spacing: 3px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-name {
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 12px 0;
+}
+
+.pg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    box-shadow: 0 2px 20px rgba(72, 1, 36, 0.237);
+    border-radius: 1rem;
+}
+
+.left-side {
+    text-align: center;
+    line-height: 35px;
+    padding: 1rem;
+    width: 50%;
+}
+
+.big-txt {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.small-txt {
+    text-transform: none;
+}
+
+.sign-up-form, .login-form {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-pink);
+    width: 25vw;
+    padding: 1rem;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.to-do {
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+}
+
+input {
+    margin: 8px 0;
+    width: 100%;
+    height: 2rem;
+    padding: 6px;
+}
+
+.det {
+    margin-bottom: 16px;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+#password, #email {
+    text-transform: lowercase;
+}
+
+.sign-up, .login{
+    width: 100%;
+    height: 3rem;
+    background-color: var(--dark-pink);
+    color: white;
+    font-weight: 500;
+}
+
+.sign-up:hover {
+    background-color: white;
+    border: solid 2px rgb(199, 90, 126);
+    color: var(--dark-pink);
+}
+
+a {
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.login {
+    margin-top: 8px;
+}

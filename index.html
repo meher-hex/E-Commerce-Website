@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tulip Town</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome icons -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <header>
+        <a href="#home" class="logo">tulip town.</a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#products">products</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="user.html" class="fas fa-user"></a>
+        </div>
+    </header>
+
+    <!-- main page -->
+    <section class="home" id="home">
+        <div class="content">
+            <p class="welcome">Welcome to Tulip Town!</p><br>
+            <p class="welcome-txt">Flowers have been a significant way to express love and joy for centuries! So many things have changed but making your loved ones day by gifting them flowers is still prominent. So, what are you waiting for? Choose their favourite flowers and send them right away!
+            <br>
+            <i>Or buy one for yourself!</i></p><br><br>
+
+            <button class="products-btn">Products</button>
+        </div>
+    </section>
+
+    <section class="sales">
+        <p class="headings">sales</p>
+        <div class="sale-products">
+            <div class="product">
+                <img src="pictures/products/bouquet 1.jpeg" alt="a flower bouquet" class="product-img">
+                <div class="product-info">
+                    <div class="product-txt">
+                        <p class="product-name">teleflora's blossoms</p>
+                        <p class="product-price">$70.00 <span class="prev-price">$75.00</span></p>
+                    </div>
+                    <div class="add-to-cart-btn">
+                        <p class="cart-plus-btn"><a href="#" class="fas fa-cart-plus fa-2x" onclick="added(this)"></a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="pictures/products/bouquet 2.jpg" alt="a flower bouquet" class="product-img">
+                <div class="product-info">
+                    <div class="product-txt">
+                        <p class="product-name">fall's blossoms</p>
+                        <p class="product-price">$55.00 <span class="prev-price">$60.00</span></p>
+                    </div>
+                    <div class="add-to-cart-btn">
+                        <p class="cart-plus-btn"><a href="#" class="fas fa-cart-plus fa-2x" onclick="added(this)"></a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="pictures/products/bouquet 3.jpg" alt="a flower bouquet" class="product-img">
+                <div class="product-info">
+                    <div class="product-txt">
+                        <p class="product-name">lilac's blossoms</p>
+                        <p class="product-price">$70.00 <span class="prev-price">$80.00</span></p>
+                    </div>
+                    <div class="add-to-cart-btn">
+                        <p class="cart-plus-btn"><a href="#" class="fas fa-cart-plus fa-2x" onclick="added(this)"></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="tulip-town">
+            <span class="headings" id="shop-name">Tulip Town</span>
+            <p class="about-txt">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum minima officiis sunt commodi illo molestiae dicta vel fugit soluta aspernatur accusantium voluptates odio itaque temporibus culpa optio quibusdam, possimus quam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis minima officia voluptates eligendi culpa error alias suscipit, veniam ex qui beatae illum delectus distinctio nesciunt in. Adipisci eveniet dicta eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum molestias illum exercitationem rerum libero doloribus maxime deleniti atque molestiae. Dignissimos obcaecati porro ipsum expedita sed suscipit quas explicabo alias aut.
+            </p>
+        </div>
+        <img src="pictures/shop/about-img.png" alt="about us in one image" class="about-img">
+    </section>
+    
+    <div class="shop-btn">
+        <button class="view-btn">View Shop</button>
+    </div>
+
+    <section class="review" id="review">
+        <p class="headings">Reviews</div>
+        <div class="review-list">
+            <div class="rv">
+                <div class="identity">
+                    <i class="fas fa-user fa-2x"></i><p class="reviewer">John Nolan</p>
+                </div>
+                <p class="opinion">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet maxime aliquid, molestias natus consequuntur velit ipsa.
+                </p>
+                <i onclick="likedFunc(this)" class="fa-regular fa-heart fa-2x" id="like"></i>
+            </div>
+
+            <div class="rv">
+                <div class="identity">
+                    <i class="fas fa-user fa-2x"></i><p class="reviewer">Orson Hodge</p>
+                </div>
+                <p class="opinion">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet maxime aliquid, molestias natus consequuntur velit ipsa.
+                </p>
+                <i onclick="likedFunc(this)" class="fa-regular fa-heart fa-2x" id="like"></i>
+            </div>
+
+            <div class="rv">
+                <div class="identity">
+                        <i class="fas fa-user fa-2x"></i><p class="reviewer">Gabrielle Solis</p>
+                </div>
+                <p class="opinion">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet maxime aliquid, molestias natus consequuntur velit ipsa.
+                </p>
+                <i onclick="likedFunc(this)" class="fa-regular fa-heart fa-2x" id="like"></i>
+            </div>
+
+            <div class="rv">
+                <div class="identity">
+                    <i class="fas fa-user fa-2x"></i><p class="reviewer">Lynette Scavo</p>
+                </div>
+                <p class="opinion">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet maxime aliquid, molestias natus consequuntur velit ipsa.
+                </p>
+                <i onclick="likedFunc(this)" class="fa-regular fa-heart fa-2x" id="like"></i>
+            </div>
+        </div>
+            <div class="post-rv">
+                <input type="text" class="input-opinion" id="rev">
+                <button class="post-btn" onclick="posted(this)">post</button>
+                <button class="cancel-btn" onclick="eraseReview(this)">cancel</button>
+            </div>
+    </section>
+
+    <footer>
+        <div class="foot">
+            <div class="quick-link">
+                    <p class="sub-headings">Quick Links</p>
+                <div class="lists">
+                    <div class="list-1">
+                        <ul>
+                            <li>blog</li>
+                            <li>services</li>
+                            <li>hours</li>
+                            <li>my account</li>
+                            <li>FAQs</li>
+                        <ul>
+                    </div>
+                    <div class="list-2">
+                        <ul>
+                            <li>how to care</li>
+                            <li>types</li>
+                            <li>fertilizers & others</li>
+                            <li>delivery</li>
+                            <li>terms & conditions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="address">
+                <p class="sub-headings">Address</p>
+                <p>123 anywhere st. area, city, country</p><br>
+                <a href="#contact" id="cont-link">get in touch</a>
+            </div>
+            
+            <div class="socials">
+                <p class="sub-headings">socials</p>
+                <p class="lowcase">tuliptown@gmail.com</p>
+                <p class="normal-case"><i><span class="ig-username">tuliptown.fl</span></i> on <b>Instagram</b></p>
+                <p>+880 1234567890</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- javascript file goes up -->
+    <script src="script.js"></script>
+</body>
+</html>
